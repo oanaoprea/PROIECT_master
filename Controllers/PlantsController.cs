@@ -173,7 +173,7 @@ namespace PROIECT.Controllers
 
             var plantToUpdate = await _context.Plants.FirstOrDefaultAsync(s => s.ID == id);
 
-            if (await TryUpdateModelAsync<Plant>(plantToUpdate,"",s => s.Category, s => s.Name, s => s.Price, s => s.Description, s => s.Light, s => s.Water, s => s.Temperature, s => s.Image))
+            if (await TryUpdateModelAsync<Plant>(plantToUpdate,"",s => s.CategoryID, s => s.Name, s => s.Price, s => s.Description, s => s.Light, s => s.Water, s => s.Temperature, s => s.Image))
             {
                 try
                 {

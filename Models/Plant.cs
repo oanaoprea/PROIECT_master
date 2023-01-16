@@ -18,7 +18,7 @@ namespace PROIECT.Models
         public string Image { get; set; }
         public ICollection<Order>? Orders { get; set; }
         public Category? Category { get; set; }
-        public ICollection<AvailablePlant> AvailablePlants { get; set; }
+        public ICollection<AvailablePlant>? AvailablePlants { get; set; }
 
     }
 }
